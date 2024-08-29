@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exibir LocalStorage</title>
+</head>
+<body>
+    <h1>Conteúdo do LocalStorage</h1>
+    <ul id="localStorageList"></ul>
+
+    <script>
+        const list = document.getElementById('localStorageList');
+
+        for (let i = 0; i < localStorage.length; i++) {
+            const key = localStorage.key(i);
+            const value = localStorage.getItem(key);
+
+            const listItem = document.createElement('li');
+            listItem.textContent = `${key}: ${value}`;
+            list.appendChild(listItem);
+        }
+    </script>
+</body>
+</html>

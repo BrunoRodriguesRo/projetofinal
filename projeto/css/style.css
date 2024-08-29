@@ -1,0 +1,396 @@
+/* ====================================
+   Estilos Gerais
+==================================== */
+body {
+  font: 14px / 24px "Raleway", sans-serif;
+  color: #333333;
+  font-style: normal;
+  font-weight: 400;
+
+}
+
+/* ====================================
+ Navbar (Menu de Navegação)
+==================================== */
+.navbar {
+  position: absolute;
+  width: 100%;
+  z-index: 10;
+  background: rgba(0, 0, 0, 0.65);
+  /* Fundo semi-transparente */
+}
+
+.nav-logo {
+  width: 80px;
+  height: 80px;
+}
+
+.navbar-nav>li>a {
+  color: #fff;
+  font-size: 13px;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin: 7.5px 15px;
+}
+
+.navbar-nav .nav-item {
+  display: flex;
+  align-items: center;
+}
+
+.login-nav {
+  font: 12px "Raleway", sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+  margin-left: auto;
+  background-color: #6bb41d;
+  color: #fff;
+  transition: background-color 0.6s ease, color 0.6s ease;
+}
+
+.login-nav i {
+  padding-right: 5px;
+}
+
+.login-nav:hover {
+  background-color: #218b29;
+  color: #fff;
+}
+
+
+
+/* ====================================
+Dropdown Login
+==================================== */
+.dropdown-menu {
+  padding: 15px;
+  width: 280px;
+  margin-left: 20px;
+  margin-top: 165px;
+  transform: translateY(15px);
+  transform: translateX(-50%); /* Ajuste opcional para centralizar o dropdown em relação ao botão */
+
+}
+
+.dropdown-menu input {
+  margin-bottom: 10px;
+}
+
+.btnEntrar{
+  margin-bottom: 20px ;
+  background-color: #6bb41d;
+  width: 240px;
+  
+}
+
+
+
+.btnCadastro{
+  background-color: #6bb41d;
+  width: 240px;
+}
+
+.btnEntrar:hover,
+.btnCadastro:hover {
+  background-color:  #218b29;
+  color: #fff;
+}
+
+/* ====================================
+ Carrossel
+==================================== */
+.carousel-item {
+  height: 100vh;
+}
+
+.carousel-item img {
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ====================================
+Elementos Diversos Carrossel
+==================================== */
+.carrossel-legenda {
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.carrossel-titulo {
+  font-size: 60px;
+  font-weight: 700;
+}
+
+.carrossel-paragrafo {
+  font-size: 22px;
+}
+
+/* ====================================
+Section Objetivo
+==================================== */
+.objetivo-titulo {
+  text-align: center;
+  font-size: 34px;
+  margin-bottom: 18px;
+  text-transform: uppercase;
+  font-family: "Trirong", serif;
+  letter-spacing: 0.03em;
+  font-weight: 500;
+  padding-top: 60px;
+  color: #000000;
+}
+
+.objetivo-subtitulo {
+  margin-bottom: 30px;
+  text-align: center;
+  font-size: 15px;
+  line-height: 32px;
+  font-weight: 400;
+  color: #888888;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+}
+
+.objetivo-bloco {
+  margin-bottom: 48px;
+  background: #77c720;
+  padding: 40px 30px 50px;
+}
+
+
+/* ====================================
+Elementos Bloco Objetivo
+==================================== */
+.icone-bloco {
+  font-size: 50px;
+  color: #fff;
+  padding-bottom: 35px;
+}
+
+.titulo-bloco {
+  color: #fff;
+}
+
+.paragrafo-bloco {
+  color: #fff;
+  line-height: 24px;
+  margin: 0 0 12px;
+  padding: 0;
+
+}
+
+/* ====================================
+Section sobre o Carbono
+==================================== */
+
+.carbono-section {
+  background-image: url(../img/causes_bg.jpg) !important;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: initial;
+  position: relative;
+  overflow: hidden;
+}
+
+.carbono-section:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.7);
+  content: "";
+  width: 100%;
+  height: 2000px;
+}
+
+.carbono-conteudo {
+  padding: 100px 0 100px 0;
+  background: #ffffff;
+}
+
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+
+
+}
+
+.row {
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.section-cabecalho {
+  margin-bottom: 48px;
+}
+
+.carbono-titulo {
+  position: relative;
+  font-size: 32px;
+  margin-bottom: 18px;
+  text-transform: uppercase;
+  font-family: "Trirong", serif;
+  letter-spacing: 0.03em;
+  font-weight: 500;
+  display: inline-block;
+  color: #000000;
+}
+
+.carbono-titulo-alt {
+  color: #ffffff;
+}
+
+.carbono-subtitulo {
+  position: relative;
+  font-size: 15px;
+  line-height: 32px;
+  font-weight: 400;
+  color: #888888;
+  margin-bottom: 0;
+  padding: 0px 42px;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+}
+
+.carbono-subtitulo-alt {
+  color: #ffffff;
+}
+
+/* ====================================
+Carrossel Section
+==================================== */
+.carousel-caption {
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+  right: 0;
+  color: #fff;
+  text-align: center;
+}
+
+.carrossel {
+  background-color: #fff;
+
+  height: 300px;
+}
+
+.carrossel h2 {
+  color: #000000;
+}
+
+.carrossel p {
+  color: #000000;
+}
+
+.carousel-indicators .active {
+  background-color: #169c3c;
+  /* Cor do indicador ativo */
+}
+
+/* ====================================
+Área Login
+==================================== */
+
+.section-login {
+  padding-top: 64px;
+  padding-bottom: 25px;
+  background: transparent;
+  background-image: url(../img/bannerlogin.png);
+  background-repeat: repeat;
+  background-position: center center;
+  background-size: initial;
+  background-attachment: fixed;
+  display: block;
+  clear: both;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+
+.section-login::before {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #77c720;
+  opacity: 0.95;
+  top: 0;
+  left: 0;
+  content: "";
+}
+
+.login-titulo {
+  position: relative;
+  font-size: 38px;
+  line-height: 42px;
+  color: #ffffff;
+  font-weight: 500;
+  margin: 0;
+  font-family: "Trirong", serif;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.login {
+  font: 15px "Raleway", sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+  line-height: 32px;
+  font-weight: 600;
+  width: 180px;
+  height: 45px;
+  background-color: #fff;
+  color: #77c720;
+  transition: background-color 0.6s ease, color 0.6s ease;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  position: relative;
+  background-clip: padding-box;
+}
+
+.login-registro {
+  font: 15px "Raleway", sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+  line-height: 32px;
+  font-weight: 600;
+  width: 180px;
+  height: 45px;
+  background-color: #fff;
+  color: #77c720;
+  transition: background-color 0.6s ease, color 0.6s ease;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  position: relative;
+  background-clip: padding-box;
+}
+
+.login i,
+.login-registro i {
+  padding-right: 5px;
+  font-size: 14px;
+}
+
+.login:hover,
+.login-registro:hover {
+  background-color: #208d292d;
+  color: #fff;
+}
+
+.login-paragrafo {
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 0.004em;
+  color: #ffffff;
+  position: relative;
+}

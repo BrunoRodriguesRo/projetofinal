@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="./css/dashboard.css">
+    </link>
+    <script>
+        // Verifica se o usuário está autenticado
+        if (localStorage.getItem('authenticated') !== 'true') {
+            window.location.href = 'login.html'; // Redireciona para a página de login
+        }
+    </script>
+</head>
+
+<body>
+    <div class="dashboard-container">
+        <h1>Bem vindo ao Dashboard</h1>
+        <p>Você fez login com sucesso.</p>
+        <a href="#">Ver Perfil</a>
+        <a href="#">Configurações</a>
+        <a href="./index.html" id="logout">Sair</a>
+    </div>
+</body>
+<script src="./js/login.js"></script>
+
+</html>

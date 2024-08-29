@@ -1,0 +1,44 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    background-color: #e8f5e9; /* Fundo verde claro */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+ 
+  /* Estilo do container principal */
+  .dashboard-container {
+    background-color: #ffffff;
+    padding: 20px 40px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+    max-width: 600px;
+  }
+ 
+  /* Estilo do título */
+  h1 {
+    color: #2e7d32; /* Verde mais escuro */
+    margin-bottom: 20px;
+  }
+ 
+  /* Estilo dos links */
+  .dashboard-container a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #66bb6a; /* Verde mais forte */
+    color: #ffffff; /* Cor do texto branco */
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+ 
+  .dashboard-container a:hover {
+    background-color: #43a047; /* Verde mais escuro ao passar o mouse */
+  }
